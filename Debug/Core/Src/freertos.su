@@ -1,0 +1,6 @@
+../Core/Src/freertos.c:84:6:vApplicationGetIdleTaskMemory	24	static
+../Core/Src/freertos.c:97:6:MX_FREERTOS_Init	208	static
+../Core/Src/freertos.c:167:6:fonction_jeu	24	static
+../Core/Src/freertos.c:254:6:fonction_affichage	128	static
+../Core/Src/freertos.c:387:6:fonction_entrees	16	static
+../Core/Src/freertos.c:402:6:fonction_fantome	16	static

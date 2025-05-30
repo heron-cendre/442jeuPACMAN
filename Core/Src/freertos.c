@@ -52,7 +52,7 @@ extern struct {
 } points[];
 
 // Mutex pour proteger l'etat du jeu partage
-osMutexId gameMutexHandle;
+//osMutexId gameMutexHandle;
 
 // Semaphore pour la synchronisation de l'affichage
 osSemaphoreId displaySemHandle;
@@ -99,8 +99,8 @@ void MX_FREERTOS_Init(void) {
 
   /* RTOS_MUTEX utilisateur */
   // Creer le mutex pour la protection de l'etat du jeu
-  osMutexDef(gameMutex);
-  gameMutexHandle = osMutexCreate(osMutex(gameMutex));
+  //osMutexDef(gameMutex);
+ // gameMutexHandle = osMutexCreate(osMutex(gameMutex));
   
   // Creer le semaphore pour la synchronisation de l'affichage
   osSemaphoreDef(displaySem);
@@ -258,10 +258,10 @@ void fonction_affichage(void const * argument)
   static GameState lastEtat = -1;
   static bool points_erased[MAX_POINTS] = {0};
   for(;;) {
-    if(osMutexWait(gameMutexHandle, osWaitForever) == osOK) {
+    //if(osMutexWait(gameMutexHandle, osWaitForever) == osOK) {
       GameState localEtat = etat;
       PacMan localPacman = pacman;
-      osMutexRelease(gameMutexHandle);
+      //osMutexRelease(gameMutexHandle);
 
       // Detecter le changement d'etat pour reinitialiser les couches et le suivi
       if (localEtat != lastEtat) {

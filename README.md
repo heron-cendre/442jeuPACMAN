@@ -18,7 +18,9 @@ Le jeu fonctionne selon 4 états principaux :
 - **STATE_GAME_RUNNING** : jeu en cours
 - **STATE_LEVEL_COMPLETE** : niveau terminé
 - **STATE_GAME_OVER** : fin de partie
+
 ![Etats](images/machine_a_etat.jpg)
+
 Les transitions se font via les boutons ou selon les événements du jeu (tous les points mangés, plus de vies…).
 
 ## Deux taches

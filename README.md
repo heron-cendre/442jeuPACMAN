@@ -24,6 +24,12 @@ Les transitions se font via les boutons ou selon les événements du jeu (tous l
 ## Deux taches
 
 La tache gérant la logique du jeu :
+
 ![tache gérant le bon déroulement du jeu](images/fonction_jeu.jpg)
+
+Elle appelle de nombreuses fonctions déjà codées
 La tache gérant l'affichage sur l'écran LCD :
+
 ![tache gérant l'affichage du jeu](images/fonction_affichage.jpg)
+
+## Pistes d'amélioration 

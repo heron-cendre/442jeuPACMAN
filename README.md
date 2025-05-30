@@ -33,3 +33,8 @@ La tache gérant l'affichage sur l'écran LCD :
 ![tache gérant l'affichage du jeu](images/fonction_affichage.jpg)
 
 ## Pistes d'amélioration 
+
+- Il y a un probleme de mise à jour de pacpman.lives => le jeu ne se termine pas lorsque l'on meurt trois fois ou plus
+- Augmenter la vitesse pour monter de niveau lorsque l'on a gagné
+- Ajouter d'autres labyrinthes (maze)
+- Modifier la 'MoveGhost' pour qu'ils aillent partout et poursuivent PacMan correctement
